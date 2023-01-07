@@ -40,7 +40,13 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    //Quando o scroll for maior que 350 viewport, add a classe shwo-scroll para a taga com o scrollup
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
